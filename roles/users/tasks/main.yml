@@ -1,8 +1,0 @@
-# Install SSH keys onto root user for now
----
-- name: Setup authorized_keys for root user
-  authorized_key: user=root key="{{ item }}"
-  with_file:
-      - public_keys/mitcha.id_rsa.pub
-      - public_keys/tylerd.id_rsa.pub
-
